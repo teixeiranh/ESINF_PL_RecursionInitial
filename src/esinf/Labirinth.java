@@ -49,7 +49,7 @@ public class Labirinth
         }
 
         //verify if cant move and we are in the final position
-        
+
         return actual;
     }
 
