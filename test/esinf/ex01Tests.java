@@ -36,4 +36,13 @@ public class ex01Tests
 
         assertEquals(expectedResult, result);
     }
+
+    @Test
+    public void TestConvertToInt()
+    {
+        int expectedResult = 134;
+        int result = ex01.convertString("134");
+
+        assertEquals(expectedResult, result);
+    }
 }

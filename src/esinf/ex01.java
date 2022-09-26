@@ -54,4 +54,27 @@ public class ex01
         //recursive case
         return gcd(b,(a%b));
     }
+
+    /**
+     * Exercise d
+     */
+    public static int convertString(String word)
+    {
+
+        //base case
+        if (word.length()==1)
+        {
+            return (word.charAt(0)-'0');
+        }
+
+        double y=convertString(word.substring(1));
+
+        double x= word.charAt(0)-'0';
+
+        x=x*Math.pow(10,word.length()-1)+y;
+
+        //recursive case
+        return (int) x;
+    }
+
 }
